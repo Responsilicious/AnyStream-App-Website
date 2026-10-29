@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AnyStream · Your library. Ready to play.</title>
+  <meta name="description" content="AnyStream is a personal-media player in development for Amazon Vega OS, with Jellyfin and Plex support planned.">
+  <!-- PRE-LAUNCH: remove this noindex tag when the site is approved for publishing. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0B101B">
+  <meta property="og:title" content="AnyStream · Your library. Ready to play.">
+  <meta property="og:description" content="A fresh way to browse your movies and series on TV. In development, with Jellyfin and Plex support planned.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/img/screens/home-1672.jpg">
+  <meta property="og:locale" content="en_GB">
+  <link rel="icon" href="/assets/img/brand/icon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/img/brand/icon-180.png">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="/assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">
+        <img src="/assets/img/brand/anystream-logo-96.png" width="317" height="96" alt="AnyStream home">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm" href="#updates">Get launch updates</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Hero ============ -->
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="status-pill"><span class="status-dot" aria-hidden="true"></span>In development · Jellyfin and Plex support planned.</p>
+          <h1 id="hero-title">Your library. Ready&nbsp;to&nbsp;play.</h1>
+          <p class="lead">A fresh way to browse your movies and series on TV. AnyStream brings clear previews, thoughtful navigation and your personal media servers into one familiar experience.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#updates">Get launch updates</a>
+            <a class="btn btn-secondary" href="#screenshots">Explore the design</a>
+          </div>
+        </div>
+
+        <figure class="shot hero-shot">
+          <button class="shot-frame" type="button" data-lightbox="home" aria-label="Enlarge Home screen design preview">
+            <picture>
+              <source type="image/webp" srcset="/assets/img/screens/home-960.webp 960w, /assets/img/screens/home-1672.webp 1672w" sizes="(min-width: 1000px) 640px, 100vw">
+              <img src="/assets/img/screens/home-1672.jpg" width="1672" height="941" alt="AnyStream Home screen: a featured series with Play and More info buttons, a Continue Playing row, and a Switch server panel listing Jellyfin and Plex libraries." fetchpriority="high">
+            </picture>
+          </button>
+          <figcaption><span>Home</span> <span class="shot-badge">Design preview</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ Feature highlights ============ -->
+    <section id="features" class="section" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Planned features</p>
+          <h2 id="features-title">Designed for the sofa, built around your library.</h2>
+          <p class="section-intro">AnyStream is still in development. The capabilities below are planned and may change before release.</p>
+        </header>
+
+        <ul class="feature-grid">
+          <li class="card feature">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="4" rx="1"/><rect x="3" y="10" width="18" height="4" rx="1"/><rect x="3" y="16" width="18" height="4" rx="1"/></svg>
+            </span>
+            <p class="feature-tag">Planned</p>
+            <h3>Browse by genre</h3>
+            <p>Independent genre rows with clear previews and visible titles, so you can see what you are choosing before you select it.</p>
+          </li>
+          <li class="card feature">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+            <p class="feature-tag">Planned</p>
+            <h3>Pick up where you left off</h3>
+            <p>Continue Playing and Up Next keep your current films and episodes close at hand on the Home screen.</p>
+          </li>
+          <li class="card feature">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 10h6M7 14h10"/></svg>
+            </span>
+            <p class="feature-tag">Planned</p>
+            <h3>Look before you play</h3>
+            <p>Explore movie details, seasons and episodes before selecting Play.</p>
+          </li>
+          <li class="card feature">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg>
+            </span>
+            <p class="feature-tag">Planned</p>
+            <h3>All your servers in one place</h3>
+            <p>Add multiple Jellyfin and Plex servers and switch between your saved libraries.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ Screenshot gallery ============ -->
+    <section id="screenshots" class="section section-raised" aria-labelledby="screenshots-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Screenshots</p>
+          <h2 id="screenshots-title">Explore the design.</h2>
+          <p class="section-intro">These are design previews of the app in development. Select a screen to enlarge it.</p>
+        </header>
+
+        <ul class="gallery">
+          <li>
+            <figure class="shot">
+              <button class="shot-frame" type="button" data-lightbox="home" aria-label="Enlarge Home screen design preview">
+                <picture>
+                  <source type="image/webp" srcset="/assets/img/screens/home-960.webp 960w, /assets/img/screens/home-1672.webp 1672w" sizes="(min-width: 860px) 560px, 100vw">
+                  <img src="/assets/img/screens/home-1672.jpg" width="1672" height="941" loading="lazy" alt="AnyStream Home screen with a featured series, a Continue Playing row and the Switch server panel.">
+                </picture>
+              </button>
+              <figcaption><span>Home</span> <span class="shot-badge">Design preview</span></figcaption>
+            </figure>
+          </li>
+
+          <!-- SCREENSHOT NEEDED: Genres screen with horizontal title rows (not the older category grid).
+               Replace this placeholder with a <picture> block like the others. -->
+          <li>
+            <figure class="shot">
+              <div class="shot-frame shot-placeholder" role="img" aria-label="Genres screen design preview, coming soon">
+                <span class="placeholder-text">Genres screen<br><small>Design preview coming soon</small></span>
+              </div>
+              <figcaption><span>Genres</span> <span class="shot-badge">Design preview</span></figcaption>
+            </figure>
+          </li>
+
+          <!-- SCREENSHOT NEEDED: Series screen (seasons and episodes). -->
+          <li>
+            <figure class="shot">
+              <div class="shot-frame shot-placeholder" role="img" aria-label="Series screen design preview, coming soon">
+                <span class="placeholder-text">Series screen<br><small>Design preview coming soon</small></span>
+              </div>
+              <figcaption><span>Series</span> <span class="shot-badge">Design preview</span></figcaption>
+            </figure>
+          </li>
+
+          <!-- SCREENSHOT NEEDED: Connected Servers screen. -->
+          <li>
+            <figure class="shot">
+              <div class="shot-frame shot-placeholder" role="img" aria-label="Connected Servers screen design preview, coming soon">
+                <span class="placeholder-text">Connected Servers screen<br><small>Design preview coming soon</small></span>
+              </div>
+              <figcaption><span>Connected Servers</span> <span class="shot-badge">Design preview</span></figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <figure class="shot">
+              <button class="shot-frame" type="button" data-lightbox="movie-details" aria-label="Enlarge Movie details screen design preview">
+                <picture>
+                  <source type="image/webp" srcset="/assets/img/screens/movie-details-960.webp 960w, /assets/img/screens/movie-details-1672.webp 1672w" sizes="(min-width: 860px) 560px, 100vw">
+                  <img src="/assets/img/screens/movie-details-1672.jpg" width="1672" height="941" loading="lazy" alt="AnyStream Movie details screen with synopsis, cast, progress bar, Resume, Start again and Favourite buttons, and a More like this row.">
+                </picture>
+              </button>
+              <figcaption><span>Movie details</span> <span class="shot-badge">Design preview</span></figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <figure class="shot">
+              <button class="shot-frame" type="button" data-lightbox="plex-sign-in" aria-label="Enlarge Sign in with Plex screen design preview">
+                <picture>
+                  <source type="image/webp" srcset="/assets/img/screens/plex-sign-in-960.webp 960w, /assets/img/screens/plex-sign-in-1672.webp 1672w" sizes="(min-width: 860px) 560px, 100vw">
+                  <img src="/assets/img/screens/plex-sign-in-1672.jpg" width="1672" height="941" loading="lazy" alt="Sign in with Plex screen showing an example four-character link code and steps to approve the device at plex.tv/link.">
+                </picture>
+              </button>
+              <figcaption><span>Sign in with Plex</span> <span class="shot-badge">Design preview</span></figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ How it works ============ -->
+    <section id="how-it-works" class="section" aria-labelledby="how-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title">Three steps from sofa to screen.</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="card step">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3>Connect your library</h3>
+            <p>Sign in to the Jellyfin or Plex server you already use.</p>
+          </li>
+          <li class="card step">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3>Choose your server</h3>
+            <p>Pick the saved library you want to browse, and switch whenever you like.</p>
+          </li>
+          <li class="card step">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3>Find your next watch</h3>
+            <p>Browse rows, check the details and press Play.</p>
+          </li>
+        </ol>
+
+        <p class="note">
+          <strong>Good to know:</strong> AnyStream plays the personal media you already have. It does not supply films or programmes, television subscriptions or server hosting.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="section section-raised" aria-labelledby="faq-title">
+      <div class="container container-narrow">
+        <header class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Questions, answered.</h2>
+        </header>
+
+        <div class="faq">
+          <details>
+            <summary>Which media servers will AnyStream support?</summary>
+            <div class="faq-body">
+              <p>Support for Jellyfin and Plex is planned. Exact server versions and features will be confirmed nearer to release.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Which devices will it run on?</summary>
+            <div class="faq-body">
+              <p>AnyStream is being designed for Amazon Vega OS. Compatibility is planned rather than confirmed, and we will share details of supported devices when they are known. Playback of particular formats will depend on your device and server.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Can I save more than one server?</summary>
+            <div class="faq-body">
+              <p>Yes, that is the plan. You will be able to add multiple Jellyfin and Plex servers and switch between your saved libraries.</p>
+              <p>Each server keeps its own account and its own viewing progress. AnyStream does not combine or synchronise progress between different servers.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>When will AnyStream be available?</summary>
+            <div class="faq-body">
+              <p>AnyStream is in development and there is no release date yet. <a href="#updates">Sign up for launch updates</a> and we will let you know when there is news.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Do I need my own media library?</summary>
+            <div class="faq-body">
+              <p>Yes. AnyStream is a player for personal media servers you already have access to. It does not provide films, programmes, subscriptions or server hosting.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Does AnyStream change how my Plex account works?</summary>
+            <div class="faq-body">
+              <p>No. AnyStream connects through your existing Plex account, so Plex’s own access and remote-playback requirements still apply. Depending on how your server is set up, watching away from the server’s home network may need a paid Plex plan. Please check Plex’s current terms.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Launch updates ============ -->
+    <section id="updates" class="section" aria-labelledby="updates-title">
+      <div class="container container-narrow">
+        <div class="card subscribe">
+          <h2 id="updates-title">Be first to hear about AnyStream.</h2>
+          <p>Leave your email address and we will send you occasional updates about AnyStream’s development and launch.</p>
+
+          <!-- NOT CONNECTED: this form has no destination yet.
+               Before publishing, set the real action/endpoint and link the owner-supplied privacy notice below. -->
+          <form class="subscribe-form" id="subscribe-form" novalidate>
+            <div class="field">
+              <label for="subscribe-email">Email address</label>
+              <input id="subscribe-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="subscribe-email-error">
+              <p class="field-error" id="subscribe-email-error" hidden>Enter a valid email address.</p>
+            </div>
+
+            <div class="field field-check">
+              <input id="subscribe-consent" name="consent" type="checkbox" required aria-describedby="subscribe-consent-error">
+              <label for="subscribe-consent">I agree to receive email updates about AnyStream. I can unsubscribe at any time. See the <a href="#privacy-placeholder" data-placeholder-link>privacy notice</a>.</label>
+            </div>
+            <p class="field-error" id="subscribe-consent-error" hidden>Please confirm you are happy to receive updates.</p>
+
+            <button class="btn btn-primary" type="submit">Get launch updates</button>
+            <p class="form-status" id="subscribe-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="logo logo-footer" href="#top"><img src="/assets/img/brand/anystream-logo-96.png" width="317" height="96" alt="AnyStream home" loading="lazy"></a>
+        <p class="tagline">Your library. Ready to play.</p>
+      </div>
+
+      <!-- OWNER-SUPPLIED: replace these placeholder links with the real contact address and privacy notice. -->
+      <ul class="footer-links">
+        <li><a href="#contact-placeholder" data-placeholder-link>Contact</a></li>
+        <li><a href="#privacy-placeholder" data-placeholder-link>Privacy notice</a></li>
+      </ul>
+
+      <p class="legal">AnyStream is an independent app in development. Jellyfin, Plex and Amazon are trademarks of their respective owners. AnyStream is not affiliated with, endorsed by or sponsored by Jellyfin, Plex or Amazon.</p>
+      <p class="legal">© <span data-year>2026</span> AnyStream.</p>
+    </div>
+  </footer>
+
+  <!-- Screenshot lightbox -->
+  <dialog class="lightbox" id="lightbox" aria-label="Enlarged design preview">
+    <form method="dialog" class="lightbox-close-form">
+      <button class="lightbox-close" type="submit" aria-label="Close enlarged image">&times;</button>
+    </form>
+    <figure class="lightbox-figure">
+      <img id="lightbox-img" src="" alt="" width="1672" height="941">
+      <figcaption><span class="shot-badge shot-badge-inline">Design preview</span> <span id="lightbox-caption"></span></figcaption>
+    </figure>
+  </dialog>
+</body>
+</html>
