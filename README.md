@@ -10,7 +10,7 @@ public/
   assets/css/site.css   styles (colour tokens at the top)
   assets/js/site.js     mobile menu, screenshot lightbox, subscribe-form placeholder
   assets/img/screens/   app screenshots (WebP + JPEG fallback, full 16:9)
-  favicon.svg           placeholder icon
+  assets/img/brand/     logo (transparent PNG master + 96px-high web copy) and icons
   robots.txt            blocks indexing until launch
 ```
 
@@ -33,9 +33,8 @@ Do not deploy until the pre-publish checklist below is complete.
 
 ## Before publishing
 
-These are deliberately left as placeholders. Search the code for `LOGO:`, `SCREENSHOT NEEDED:`, `OWNER-SUPPLIED:`, `NOT CONNECTED:` and `PRE-LAUNCH:`.
+These are deliberately left as placeholders. Search the code for `SCREENSHOT NEEDED:`, `OWNER-SUPPLIED:`, `NOT CONNECTED:` and `PRE-LAUNCH:`.
 
-- [ ] **Logo**: replace the text wordmark in the header and footer with the supplied AnyStream logo (keep its proportions), and replace `favicon.svg`.
 - [ ] **Screenshots**: add the Genres (horizontal title rows), Series and Connected Servers screens in place of the placeholders in the gallery. Export at 1672×941 (16:9) as `name-1672.webp`, `name-960.webp` and `name-1672.jpg`.
 - [ ] **Subscribe form**: connect it to the real email provider (form `action` or the handler in `site.js`) and remove the "Sign-up is not open yet" message.
 - [ ] **Privacy and contact**: replace the `#privacy-placeholder` and `#contact-placeholder` links with the owner-supplied pages, and remove `data-placeholder-link`.

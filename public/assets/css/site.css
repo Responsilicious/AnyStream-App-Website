@@ -145,8 +145,8 @@ a:hover { color: var(--text); }
   color: var(--text);
   text-decoration: none;
 }
-.logo img { height: 32px; width: auto; }
-.logo-wordmark { font-weight: 700; font-size: 1.375rem; letter-spacing: -0.02em; }
+.logo img { height: 40px; width: auto; }
+.logo-footer img { height: 44px; }
 
 .site-nav { display: flex; align-items: center; gap: 28px; }
 .site-nav ul { display: flex; gap: 24px; margin: 0; padding: 0; list-style: none; }
