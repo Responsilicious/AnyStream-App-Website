@@ -110,7 +110,6 @@ a:hover { color: var(--text); }
   cursor: pointer;
   transition: background-color .15s ease, border-color .15s ease, color .15s ease;
 }
-.btn-sm { min-height: 40px; padding: 8px 18px; font-size: .9375rem; }
 
 .btn-primary { background: var(--accent); color: var(--accent-ink); }
 .btn-primary:hover { background: #8EE3F4; color: var(--accent-ink); }
@@ -200,7 +199,6 @@ a:hover { color: var(--text); }
   .js .site-nav:not(.is-open) { display: none; }
   .js .site-nav ul { flex-direction: column; gap: 0; }
   .js .site-nav ul a { display: block; padding: 12px 0; font-size: 1.0625rem; }
-  .js .site-nav .btn { width: 100%; }
 
   /* Without JS, keep links visible and let them wrap. */
   .site-nav { flex-wrap: wrap; gap: 12px; }
@@ -478,53 +476,6 @@ button.shot-frame:focus-visible { outline-offset: 4px; border-radius: var(--radi
 .faq details[open] summary::after { content: "−"; }
 .faq-body { padding: 0 24px 22px; color: var(--text-2); }
 .faq-body p + p { margin-top: 12px; }
-
-/* ---------- Subscribe ---------- */
-
-.subscribe {
-  padding: clamp(28px, 5vw, 56px);
-  text-align: center;
-  background:
-    radial-gradient(80% 100% at 50% 0%, rgba(103, 216, 239, 0.10), transparent 70%),
-    var(--surface);
-}
-.subscribe h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-bottom: 12px; }
-.subscribe > p { color: var(--text-2); max-width: 32em; margin-inline: auto; }
-
-.subscribe-form {
-  display: grid;
-  gap: 16px;
-  max-width: 460px;
-  margin: 32px auto 0;
-  text-align: left;
-}
-.field { display: grid; gap: 6px; }
-.field label { font-weight: 600; font-size: .9375rem; }
-.field input[type="email"] {
-  width: 100%;
-  min-height: 48px;
-  padding: 10px 14px;
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius-sm);
-  background: var(--bg);
-  color: var(--text);
-  font: inherit;
-}
-.field input[type="email"]:focus-visible { border-color: var(--accent); outline-offset: 1px; }
-.field input[aria-invalid="true"] { border-color: #FF9C9C; }
-
-.field-check { grid-template-columns: auto 1fr; align-items: start; gap: 12px; }
-.field-check input {
-  width: 20px; height: 20px;
-  margin: 3px 0 0;
-  accent-color: var(--accent);
-}
-.field-check label { font-weight: 400; color: var(--text-2); font-size: .9375rem; }
-
-.field-error { color: #FF9C9C; font-size: .875rem; }
-.subscribe-form .btn { width: 100%; }
-.form-status { color: var(--text-2); font-size: .9375rem; text-align: center; }
-.form-status:empty { display: none; }
 
 /* ---------- Footer ---------- */
 
