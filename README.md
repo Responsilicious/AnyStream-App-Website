@@ -1,6 +1,6 @@
 # AnyStream promotional website
 
-A single-page promotional site for AnyStream, a personal-media player in development for Amazon Vega OS with Jellyfin and Plex support planned.
+A single-page promotional site for AnyStream, a free TV app for Jellyfin, Emby and Plex on Amazon Fire TV (Vega OS and Fire OS), available on the [Amazon Appstore](https://www.amazon.com/gp/product/B0HPRPN3NP).
 
 It is a static site: plain HTML, CSS and a small amount of JavaScript in `public/`. There is no build step and no third-party scripts, fonts or trackers.
 
@@ -10,8 +10,9 @@ public/
   assets/css/site.css   styles (colour tokens at the top)
   assets/js/site.js     mobile menu and screenshot lightbox
   assets/img/screens/   app screenshots (WebP + JPEG fallback, full 16:9)
+  assets/video/         feature tour and set-up walkthrough (H.264 MP4, no audio) with poster frames
   assets/img/brand/     logo (transparent PNG master + 96px-high web copy) and icons
-  robots.txt            blocks indexing until launch
+  robots.txt            allows indexing
 ```
 
 ## Preview locally
@@ -31,11 +32,14 @@ cd public && python3 -m http.server 8000
 
 Do not deploy until the pre-publish checklist below is complete.
 
-## Before publishing
+## Media
 
-These are deliberately left as placeholders. Search the code for `SCREENSHOT NEEDED:`, `OWNER-SUPPLIED:` and `PRE-LAUNCH:`.
+- **Design preview** screenshots (Home, Movie details, Sign in with Plex) are from the original design mockups.
+- **Real app** screenshots and both videos were recorded from the AnyStream app (the shared app code running in a browser) against a demo Jellyfin and Emby server with a made-up library. Titles, artwork and the demo film are fictional; the page says so next to each one.
+- Every Appstore link has `data-appstore` so it can be found and changed in one go.
 
-- [ ] **Screenshots**: add the Genres (horizontal title rows), Series and Connected Servers screens in place of the placeholders in the gallery. Export at 1672×941 (16:9) as `name-1672.webp`, `name-960.webp` and `name-1672.jpg`.
+## Still to do
+
+Search the code for `OWNER-SUPPLIED:`.
+
 - [ ] **Privacy and contact**: replace the `#privacy-placeholder` and `#contact-placeholder` links with the owner-supplied pages, and remove `data-placeholder-link`.
-- [ ] **Indexing**: remove the `noindex` meta tag in `index.html` and allow crawling in `robots.txt`.
-- [ ] Review all copy against confirmed release information. The site currently describes features as planned and gives no release date, pricing or download links.

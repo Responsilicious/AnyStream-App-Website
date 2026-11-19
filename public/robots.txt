@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /
-# PRE-LAUNCH: change to "Allow: /" when the site is approved for publishing.
+Allow: /

@@ -4,12 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AnyStream · Your library. Ready to play.</title>
-  <meta name="description" content="AnyStream is a personal-media player in development for Amazon Vega OS, with Jellyfin and Plex support planned.">
-  <!-- PRE-LAUNCH: remove this noindex tag when the site is approved for publishing. -->
-  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="AnyStream is a free TV app for your Jellyfin, Emby and Plex media on Fire TV. No ads. Get it on the Amazon Appstore.">
   <meta name="theme-color" content="#0B101B">
   <meta property="og:title" content="AnyStream · Your library. Ready to play.">
-  <meta property="og:description" content="A fresh way to browse your movies and series on TV. In development, with Jellyfin and Plex support planned.">
+  <meta property="og:description" content="A fresh way to watch your Jellyfin, Emby and Plex library on Fire TV. Free on the Amazon Appstore, with no ads.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="/assets/img/screens/home-1672.jpg">
   <meta property="og:locale" content="en_GB">
@@ -38,9 +36,10 @@
         <ul>
           <li><a href="#features">Features</a></li>
           <li><a href="#screenshots">Screenshots</a></li>
-          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#setup">Set-up guide</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
+        <a class="btn btn-primary btn-small" href="https://www.amazon.com/gp/product/B0HPRPN3NP" rel="noopener" data-appstore>Get AnyStream</a>
       </nav>
     </div>
   </header>
@@ -50,22 +49,25 @@
     <section id="top" class="hero" aria-labelledby="hero-title">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="status-pill"><span class="status-dot" aria-hidden="true"></span>In development · Jellyfin and Plex support planned.</p>
+          <p class="status-pill"><span class="status-dot" aria-hidden="true"></span>Now on the Amazon Appstore · Free, no ads</p>
           <h1 id="hero-title">Your library. Ready&nbsp;to&nbsp;play.</h1>
-          <p class="lead">A fresh way to browse your movies and series on TV. AnyStream brings clear previews, thoughtful navigation and your personal media servers into one familiar experience.</p>
+          <p class="lead">A fresh way to watch your movies and series on Fire TV. AnyStream brings your Jellyfin, Emby and Plex servers into one clear, remote-friendly app.</p>
           <div class="actions">
-            <a class="btn btn-primary" href="#screenshots">Explore the design</a>
+            <a class="btn btn-primary" href="https://www.amazon.com/gp/product/B0HPRPN3NP" rel="noopener" data-appstore>Get it on the Amazon Appstore</a>
+            <a class="btn btn-secondary" href="#setup">How to set it up</a>
           </div>
+          <p class="hero-small">For Fire TV devices on Vega OS and Fire OS. Bring your own media server.</p>
         </div>
 
         <figure class="shot hero-shot">
-          <button class="shot-frame" type="button" data-lightbox="home" aria-label="Enlarge Home screen design preview">
-            <picture>
-              <source type="image/webp" srcset="/assets/img/screens/home-960.webp 960w, /assets/img/screens/home-1672.webp 1672w" sizes="(min-width: 1000px) 640px, 100vw">
-              <img src="/assets/img/screens/home-1672.jpg" width="1672" height="941" alt="AnyStream Home screen: a featured series with Play and More info buttons, a Continue Playing row, and a Switch server panel listing Jellyfin and Plex libraries." fetchpriority="high">
-            </picture>
-          </button>
-          <figcaption><span>Home</span> <span class="shot-badge">Design preview</span></figcaption>
+          <div class="shot-frame video-frame">
+            <video controls playsinline preload="none" poster="/assets/video/anystream-tour-poster.jpg" width="1920" height="1080" aria-describedby="tour-desc">
+              <source src="/assets/video/anystream-tour.mp4" type="video/mp4">
+              <a href="/assets/video/anystream-tour.mp4">Download the AnyStream tour video (MP4)</a>
+            </video>
+          </div>
+          <figcaption><span>Take the 70-second tour</span> <span class="shot-badge">Real app · demo library</span></figcaption>
+          <p id="tour-desc" class="video-note">Recorded from the AnyStream app with a made-up library. Titles and artwork are fictional. No sound; captions are on screen.</p>
         </figure>
       </div>
     </section>
@@ -74,43 +76,53 @@
     <section id="features" class="section" aria-labelledby="features-title">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow">Planned features</p>
+          <p class="eyebrow">Features</p>
           <h2 id="features-title">Designed for the sofa, built around your library.</h2>
-          <p class="section-intro">AnyStream is still in development. The capabilities below are planned and may change before release.</p>
+          <p class="section-intro">Everything in AnyStream is built for a TV remote: big, clear focus, short paths and no typing where it can be avoided.</p>
         </header>
 
         <ul class="feature-grid">
           <li class="card feature">
             <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="4" rx="1"/><rect x="3" y="10" width="18" height="4" rx="1"/><rect x="3" y="16" width="18" height="4" rx="1"/></svg>
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg>
             </span>
-            <p class="feature-tag">Planned</p>
-            <h3>Browse by genre</h3>
-            <p>Independent genre rows with clear previews and visible titles, so you can see what you are choosing before you select it.</p>
+            <h3>Jellyfin, Emby and Plex</h3>
+            <p>Save as many servers as you like and switch between them from the server menu. Each keeps its own account and viewing progress.</p>
           </li>
           <li class="card feature">
             <span class="feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
             </span>
-            <p class="feature-tag">Planned</p>
             <h3>Pick up where you left off</h3>
-            <p>Continue Playing and Up Next keep your current films and episodes close at hand on the Home screen.</p>
+            <p>Continue Playing, Up Next and Recently Added keep your current films and episodes on the Home screen.</p>
+          </li>
+          <li class="card feature">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+            </span>
+            <h3>Filters and sorting</h3>
+            <p>Filter movies and series by genre, watch status and year. Sort by title, date added, release date or rating.</p>
+          </li>
+          <li class="card feature">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5"/></svg>
+            </span>
+            <h3>Search every server at once</h3>
+            <p>One search covers all your servers. A title found on more than one shows once, marked “On 2 servers”.</p>
           </li>
           <li class="card feature">
             <span class="feature-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 10h6M7 14h10"/></svg>
             </span>
-            <p class="feature-tag">Planned</p>
             <h3>Look before you play</h3>
-            <p>Explore movie details, seasons and episodes before selecting Play.</p>
+            <p>Movie pages with cast and synopsis, series pages with every season and episode, and what you have already watched.</p>
           </li>
           <li class="card feature">
             <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M4 7h10M4 12h16M4 17h7"/><path d="M17 4v6M20 7h-6"/></svg>
             </span>
-            <p class="feature-tag">Planned</p>
-            <h3>All your servers in one place</h3>
-            <p>Add multiple Jellyfin and Plex servers and switch between your saved libraries.</p>
+            <h3>Plays what you have</h3>
+            <p>Direct play when your Fire TV can decode the file, including 4K HEVC, and a server stream when it can’t. Choose audio and subtitles in the player.</p>
           </li>
         </ul>
       </div>
@@ -121,8 +133,8 @@
       <div class="container">
         <header class="section-head">
           <p class="eyebrow">Screenshots</p>
-          <h2 id="screenshots-title">Explore the design.</h2>
-          <p class="section-intro">These are design previews of the app in development. Select a screen to enlarge it.</p>
+          <h2 id="screenshots-title">Take a look around.</h2>
+          <p class="section-intro">Screens marked “Real app” are taken from AnyStream with a made-up demo library, so the titles and artwork are fictional. “Design preview” screens are from the original design. Select a screen to enlarge it.</p>
         </header>
 
         <ul class="gallery">
@@ -138,34 +150,39 @@
             </figure>
           </li>
 
-          <!-- SCREENSHOT NEEDED: Genres screen with horizontal title rows (not the older category grid).
-               Replace this placeholder with a <picture> block like the others. -->
           <li>
             <figure class="shot">
-              <div class="shot-frame shot-placeholder" role="img" aria-label="Genres screen design preview, coming soon">
-                <span class="placeholder-text">Genres screen<br><small>Design preview coming soon</small></span>
-              </div>
-              <figcaption><span>Genres</span> <span class="shot-badge">Design preview</span></figcaption>
+              <button class="shot-frame" type="button" data-lightbox="genres" aria-label="Enlarge Genres screen">
+                <picture>
+                  <source type="image/webp" srcset="/assets/img/screens/genres-960.webp 960w, /assets/img/screens/genres-1672.webp 1672w" sizes="(min-width: 860px) 560px, 100vw">
+                  <img src="/assets/img/screens/genres-1672.jpg" width="1672" height="941" loading="lazy" alt="AnyStream Genres screen: rows of titles for Action, Adventure and Comedy, each with a View all card, and filters for All libraries, Movies and Series.">
+                </picture>
+              </button>
+              <figcaption><span>Genres</span> <span class="shot-badge">Real app · demo library</span></figcaption>
             </figure>
           </li>
 
-          <!-- SCREENSHOT NEEDED: Series screen (seasons and episodes). -->
           <li>
             <figure class="shot">
-              <div class="shot-frame shot-placeholder" role="img" aria-label="Series screen design preview, coming soon">
-                <span class="placeholder-text">Series screen<br><small>Design preview coming soon</small></span>
-              </div>
-              <figcaption><span>Series</span> <span class="shot-badge">Design preview</span></figcaption>
+              <button class="shot-frame" type="button" data-lightbox="series" aria-label="Enlarge Series screen">
+                <picture>
+                  <source type="image/webp" srcset="/assets/img/screens/series-960.webp 960w, /assets/img/screens/series-1672.webp 1672w" sizes="(min-width: 860px) 560px, 100vw">
+                  <img src="/assets/img/screens/series-1672.jpg" width="1672" height="941" loading="lazy" alt="AnyStream Series screen: the selected episode with Play, audio and subtitle, and Favourite buttons, Season 1 and Season 2 tabs, and episode cards marked Watched or Unwatched.">
+                </picture>
+              </button>
+              <figcaption><span>Series</span> <span class="shot-badge">Real app · demo library</span></figcaption>
             </figure>
           </li>
 
-          <!-- SCREENSHOT NEEDED: Connected Servers screen. -->
           <li>
             <figure class="shot">
-              <div class="shot-frame shot-placeholder" role="img" aria-label="Connected Servers screen design preview, coming soon">
-                <span class="placeholder-text">Connected Servers screen<br><small>Design preview coming soon</small></span>
-              </div>
-              <figcaption><span>Connected Servers</span> <span class="shot-badge">Design preview</span></figcaption>
+              <button class="shot-frame" type="button" data-lightbox="servers" aria-label="Enlarge Connected servers screen">
+                <picture>
+                  <source type="image/webp" srcset="/assets/img/screens/servers-960.webp 960w, /assets/img/screens/servers-1672.webp 1672w" sizes="(min-width: 860px) 560px, 100vw">
+                  <img src="/assets/img/screens/servers-1672.jpg" width="1672" height="941" loading="lazy" alt="AnyStream Connected servers screen listing a Jellyfin and an Emby server, with Scan for new files, Rename, Set as startup server and Remove from this TV.">
+                </picture>
+              </button>
+              <figcaption><span>Connected servers</span> <span class="shot-badge">Real app · demo library</span></figcaption>
             </figure>
           </li>
 
@@ -196,34 +213,121 @@
       </div>
     </section>
 
-    <!-- ============ How it works ============ -->
-    <section id="how-it-works" class="section" aria-labelledby="how-title">
+    <!-- ============ Set-up guide ============ -->
+    <section id="setup" class="section" aria-labelledby="setup-title">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow">How it works</p>
-          <h2 id="how-title">Three steps from sofa to screen.</h2>
+          <p class="eyebrow">Set-up guide</p>
+          <h2 id="setup-title">From sofa to screen in about a minute.</h2>
+          <p class="section-intro">You need a Fire TV, the AnyStream app, and a Jellyfin, Emby or Plex server you can already sign in to. Watch the walkthrough, or follow the steps below.</p>
         </header>
 
-        <ol class="steps">
-          <li class="card step">
-            <span class="step-number" aria-hidden="true">1</span>
-            <h3>Connect your library</h3>
-            <p>Sign in to the Jellyfin or Plex server you already use.</p>
+        <div class="setup-video">
+          <figure class="shot">
+            <div class="shot-frame video-frame">
+              <video controls playsinline preload="none" poster="/assets/video/anystream-setup-poster.jpg" width="1920" height="1080" aria-describedby="setup-desc">
+                <source src="/assets/video/anystream-setup.mp4" type="video/mp4">
+                <a href="/assets/video/anystream-setup.mp4">Download the AnyStream set-up video (MP4)</a>
+              </video>
+            </div>
+            <figcaption><span>Set-up walkthrough: Jellyfin with Quick Connect, then Plex</span> <span class="shot-badge">Real app · demo server</span></figcaption>
+            <p id="setup-desc" class="video-note">Recorded from the AnyStream app connected to a demo server. No sound; captions are on screen.</p>
+          </figure>
+        </div>
+
+        <ol class="guide">
+          <li class="guide-step">
+            <div class="guide-text">
+              <span class="step-number" aria-hidden="true">1</span>
+              <h3>Install AnyStream</h3>
+              <p>On your Fire TV, search for <strong>AnyStream</strong> in the Appstore, or open the <a href="https://www.amazon.com/gp/product/B0HPRPN3NP" rel="noopener" data-appstore>AnyStream page on Amazon</a> on your phone or computer and send it to your device. It’s free and has no ads.</p>
+              <p>Open the app and choose <strong>Connect to server</strong>.</p>
+            </div>
           </li>
-          <li class="card step">
-            <span class="step-number" aria-hidden="true">2</span>
-            <h3>Choose your server</h3>
-            <p>Pick the saved library you want to browse, and switch whenever you like.</p>
+
+          <li class="guide-step">
+            <div class="guide-text">
+              <span class="step-number" aria-hidden="true">2</span>
+              <h3>Pick your server type</h3>
+              <p>Choose <strong>Jellyfin</strong>, <strong>Emby</strong> or <strong>Plex</strong>. You can add the others later from the server menu.</p>
+            </div>
+            <figure class="shot guide-shot">
+              <button class="shot-frame" type="button" data-lightbox="setup-server-type" aria-label="Enlarge Add a server screen">
+                <picture>
+                  <source type="image/webp" srcset="/assets/img/screens/setup-server-type-960.webp 960w, /assets/img/screens/setup-server-type-1672.webp 1672w" sizes="(min-width: 860px) 520px, 100vw">
+                  <img src="/assets/img/screens/setup-server-type-1672.jpg" width="1672" height="941" loading="lazy" alt="Add a server screen with three choices: Connect Jellyfin, Connect Emby and Sign in with Plex.">
+                </picture>
+              </button>
+              <figcaption><span>Add a server</span> <span class="shot-badge">Real app</span></figcaption>
+            </figure>
           </li>
-          <li class="card step">
-            <span class="step-number" aria-hidden="true">3</span>
-            <h3>Find your next watch</h3>
-            <p>Browse rows, check the details and press Play.</p>
+
+          <li class="guide-step">
+            <div class="guide-text">
+              <span class="step-number" aria-hidden="true">3</span>
+              <h3>Jellyfin or Emby: enter your server’s address</h3>
+              <p>Type the address with the on-screen keyboard, including any port, for example <code>192.168.1.20:8096</code> or <code>media.example.com</code>. On your home network, <strong>Find servers on this network</strong> can fill it in for you.</p>
+              <p>To watch away from home, use your server’s <strong>https://</strong> address.</p>
+            </div>
+            <figure class="shot guide-shot">
+              <button class="shot-frame" type="button" data-lightbox="setup-address" aria-label="Enlarge server address screen">
+                <picture>
+                  <source type="image/webp" srcset="/assets/img/screens/setup-address-960.webp 960w, /assets/img/screens/setup-address-1672.webp 1672w" sizes="(min-width: 860px) 520px, 100vw">
+                  <img src="/assets/img/screens/setup-address-1672.jpg" width="1672" height="941" loading="lazy" alt="Connect to Jellyfin server screen with a server address typed in and the on-screen keyboard open, including shortcut keys for http://, https:// and :8096.">
+                </picture>
+              </button>
+              <figcaption><span>Server address</span> <span class="shot-badge">Real app</span></figcaption>
+            </figure>
+          </li>
+
+          <li class="guide-step">
+            <div class="guide-text">
+              <span class="step-number" aria-hidden="true">4</span>
+              <h3>Jellyfin: sign in with Quick Connect</h3>
+              <p>Choose <strong>Continue to sign in</strong>, then <strong>Use Quick Connect</strong>. A six-digit code appears on your TV.</p>
+              <p>In Jellyfin on your phone or computer, open <strong>Settings → Quick Connect</strong>, enter the code and authorise it. AnyStream signs in by itself. Prefer a password? Choose <strong>Use username &amp; password</strong>.</p>
+              <p class="guide-tip">Quick Connect needs to be turned on for your server. A Jellyfin administrator can switch it on in the Dashboard, under General.</p>
+            </div>
+            <figure class="shot guide-shot">
+              <button class="shot-frame" type="button" data-lightbox="setup-quick-connect" aria-label="Enlarge Quick Connect screen">
+                <picture>
+                  <source type="image/webp" srcset="/assets/img/screens/setup-quick-connect-960.webp 960w, /assets/img/screens/setup-quick-connect-1672.webp 1672w" sizes="(min-width: 860px) 520px, 100vw">
+                  <img src="/assets/img/screens/setup-quick-connect-1672.jpg" width="1672" height="941" loading="lazy" alt="Quick Connect screen showing a six-digit sign-in code and four steps for approving it from another device.">
+                </picture>
+              </button>
+              <figcaption><span>Quick Connect</span> <span class="shot-badge">Real app</span></figcaption>
+            </figure>
+          </li>
+
+          <li class="guide-step">
+            <div class="guide-text">
+              <span class="step-number" aria-hidden="true">5</span>
+              <h3>Emby: pick your user and sign in</h3>
+              <p>After the address, choose your user from the list (or <strong>Other user</strong> to type a name), then enter your Emby password. Emby Connect sign-in isn’t supported yet, so use your server account.</p>
+            </div>
+          </li>
+
+          <li class="guide-step">
+            <div class="guide-text">
+              <span class="step-number" aria-hidden="true">6</span>
+              <h3>Plex: link with a code</h3>
+              <p>Choose <strong>Sign in with Plex</strong>. A four-character code appears. On your phone or computer, go to <strong>plex.tv/link</strong>, sign in and enter the code. Then pick your server and, if you use Plex Home, your profile.</p>
+              <p>AnyStream never sees your Plex password.</p>
+            </div>
+            <figure class="shot guide-shot">
+              <button class="shot-frame" type="button" data-lightbox="setup-plex-link" aria-label="Enlarge Sign in with Plex screen">
+                <picture>
+                  <source type="image/webp" srcset="/assets/img/screens/setup-plex-link-960.webp 960w, /assets/img/screens/setup-plex-link-1672.webp 1672w" sizes="(min-width: 860px) 520px, 100vw">
+                  <img src="/assets/img/screens/setup-plex-link-1672.jpg" width="1672" height="941" loading="lazy" alt="Sign in with Plex screen with an example link code, K7QM, and instructions to enter it at plex.tv/link.">
+                </picture>
+              </button>
+              <figcaption><span>Sign in with Plex</span> <span class="shot-badge">Real app · example code</span></figcaption>
+            </figure>
           </li>
         </ol>
 
         <p class="note">
-          <strong>Good to know:</strong> AnyStream plays the personal media you already have. It does not supply films or programmes, television subscriptions or server hosting.
+          <strong>Good to know:</strong> AnyStream plays the personal media you already have. It does not supply films or programmes, television subscriptions or server hosting. To add another server later, open the server menu at the top of Home and choose <strong>Add server</strong>.
         </p>
       </div>
     </section>
@@ -238,31 +342,38 @@
 
         <div class="faq">
           <details>
-            <summary>Which media servers will AnyStream support?</summary>
+            <summary>How much does AnyStream cost?</summary>
             <div class="faq-body">
-              <p>Support for Jellyfin and Plex is planned. Exact server versions and features will be confirmed nearer to release.</p>
+              <p>Nothing. AnyStream is free on the Amazon Appstore, with no ads and no subscription.</p>
             </div>
           </details>
 
           <details>
-            <summary>Which devices will it run on?</summary>
+            <summary>Which media servers does AnyStream support?</summary>
             <div class="faq-body">
-              <p>AnyStream is being designed for Amazon Vega OS. Compatibility is planned rather than confirmed, and we will share details of supported devices when they are known. Playback of particular formats will depend on your device and server.</p>
+              <p>Jellyfin, Emby and Plex. Jellyfin signs in with Quick Connect or a username and password, Emby with a username and password, and Plex by linking your account at plex.tv/link.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Which devices does it run on?</summary>
+            <div class="faq-body">
+              <p>Amazon Fire TV devices running Vega OS, such as the Fire TV Stick 4K Select, and Fire TV devices running Fire OS. Both are on the same <a href="https://www.amazon.com/gp/product/B0HPRPN3NP" rel="noopener" data-appstore>Amazon Appstore listing</a>. Playback of particular formats depends on your device and server.</p>
             </div>
           </details>
 
           <details>
             <summary>Can I save more than one server?</summary>
             <div class="faq-body">
-              <p>Yes, that is the plan. You will be able to add multiple Jellyfin and Plex servers and switch between your saved libraries.</p>
+              <p>Yes. Add as many Jellyfin, Emby and Plex servers as you like and switch between them from the server menu. Search looks across all of them at once.</p>
               <p>Each server keeps its own account and its own viewing progress. AnyStream does not combine or synchronise progress between different servers.</p>
             </div>
           </details>
 
           <details>
-            <summary>When will AnyStream be available?</summary>
+            <summary>Can I watch away from home?</summary>
             <div class="faq-body">
-              <p>AnyStream is in development and there is no release date yet. We will share news here when there is more to tell.</p>
+              <p>Yes, if your server can be reached from outside your home network. Use your server’s https:// address when you add it. Plex servers are found through your Plex account.</p>
             </div>
           </details>
 
@@ -283,6 +394,18 @@
       </div>
     </section>
 
+    <!-- ============ Download ============ -->
+    <section id="download" class="section download" aria-labelledby="download-title">
+      <div class="container download-inner">
+        <h2 id="download-title">Get AnyStream on your Fire TV.</h2>
+        <p class="section-intro">Free on the Amazon Appstore. No ads, no subscription.</p>
+        <div class="actions actions-center">
+          <a class="btn btn-primary btn-large" href="https://www.amazon.com/gp/product/B0HPRPN3NP" rel="noopener" data-appstore>Get it on the Amazon Appstore</a>
+        </div>
+        <p class="hero-small">Or search “AnyStream” in the Appstore on your Fire TV.</p>
+      </div>
+    </section>
+
   </main>
 
   <!-- ============ Footer ============ -->
@@ -295,23 +418,24 @@
 
       <!-- OWNER-SUPPLIED: replace these placeholder links with the real contact address and privacy notice. -->
       <ul class="footer-links">
+        <li><a href="https://www.amazon.com/gp/product/B0HPRPN3NP" rel="noopener" data-appstore>Amazon Appstore</a></li>
         <li><a href="#contact-placeholder" data-placeholder-link>Contact</a></li>
         <li><a href="#privacy-placeholder" data-placeholder-link>Privacy notice</a></li>
       </ul>
 
-      <p class="legal">AnyStream is an independent app in development. Jellyfin, Plex and Amazon are trademarks of their respective owners. AnyStream is not affiliated with, endorsed by or sponsored by Jellyfin, Plex or Amazon.</p>
+      <p class="legal">AnyStream is an independent app. Jellyfin, Emby, Plex, Amazon, Fire TV and Amazon Appstore are trademarks of their respective owners. AnyStream is not affiliated with, endorsed by or sponsored by Jellyfin, Emby, Plex or Amazon.</p>
       <p class="legal">© <span data-year>2026</span> AnyStream.</p>
     </div>
   </footer>
 
   <!-- Screenshot lightbox -->
-  <dialog class="lightbox" id="lightbox" aria-label="Enlarged design preview">
+  <dialog class="lightbox" id="lightbox" aria-label="Enlarged screenshot">
     <form method="dialog" class="lightbox-close-form">
       <button class="lightbox-close" type="submit" aria-label="Close enlarged image">&times;</button>
     </form>
     <figure class="lightbox-figure">
       <img id="lightbox-img" src="" alt="" width="1672" height="941">
-      <figcaption><span class="shot-badge shot-badge-inline">Design preview</span> <span id="lightbox-caption"></span></figcaption>
+      <figcaption><span class="shot-badge shot-badge-inline" id="lightbox-badge"></span> <span id="lightbox-caption"></span></figcaption>
     </figure>
   </dialog>
 </body>
