@@ -31,6 +31,7 @@
     var dialog = document.getElementById('lightbox');
     var dialogImg = document.getElementById('lightbox-img');
     var dialogCaption = document.getElementById('lightbox-caption');
+    var dialogBadge = document.getElementById('lightbox-badge');
 
     if (dialog && typeof dialog.showModal === 'function') {
       document.querySelectorAll('[data-lightbox]').forEach(function (trigger) {
@@ -38,9 +39,14 @@
           var name = trigger.getAttribute('data-lightbox');
           var img = trigger.querySelector('img');
           var caption = trigger.closest('figure').querySelector('figcaption > span');
+          var badge = trigger.closest('figure').querySelector('figcaption .shot-badge');
           dialogImg.src = '/assets/img/screens/' + name + '-1672.webp';
           dialogImg.alt = img ? img.alt : '';
           dialogCaption.textContent = caption ? caption.textContent : '';
+          if (dialogBadge) {
+            dialogBadge.textContent = badge ? badge.textContent : '';
+            dialogBadge.hidden = !badge;
+          }
           dialog.showModal();
         });
       });
